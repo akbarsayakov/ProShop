@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import Rating from './Rating'
 
-const Product = ({product}) => {
+const Product = ({ product }) => {
   return (
     <Card className='my-3 p-3 rounded'>
       <Link to={`/product/${product._id}`}>
@@ -22,7 +22,6 @@ const Product = ({product}) => {
           ${product.price}
         </Card.Text>
       </Card.Body>
-     
     </Card>
   )
 }
